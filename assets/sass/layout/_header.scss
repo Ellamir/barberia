@@ -2,22 +2,23 @@
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
 .header{
-    &_nav-container{
+    &__nav-container{
         background-color: $eerie-black;
     }
 
-    &_logo{
+    &__logo{
         width: 100px;
     }
 
-    &_button{
+    &__button{
         background-color: $raisin-black;
     }
 
-    &_a{
+    &__a{
         color:$white;
         &:hover{
             color:$fuzzy-wuzzy;
         }
     }
 }
+// test 

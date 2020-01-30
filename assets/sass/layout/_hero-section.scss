@@ -1,7 +1,7 @@
-.home-section{
+.hero-section{
     padding: 0px;
     text-align: center;
-    &_bg{
+    &__bg{
         background-image: url(../img/post-image.jpg);
         background-repeat: no-repeat;
         background-size: cover;
@@ -13,7 +13,7 @@
         
     }
 
-    &_h1{
+    &__h1{
         color:#ffffff;
         font-family: $playfair-display;
         font-weight: 900;
@@ -22,7 +22,7 @@
         margin-top: 20vh;
     }
 
-    &_down-icon{
+    &__flecha-abajo{
         width: 40px;
         margin-top: 15%;  
     }

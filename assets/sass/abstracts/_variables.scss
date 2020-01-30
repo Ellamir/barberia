@@ -29,14 +29,22 @@ $nickel:#6C6E70;
 
 // Textos
 
-$roboto: 'Roboto', sans-serif;
-$playfair-display: 'Playfair Display', serif;
+$roboto: 'Roboto', 'sans-serif';
+$playfair-display: 'Playfair Display', 'serif';
 $light:300;
 $regular:400;
 $black-italic:900 italic;
-$highlight-color:$fuzzy-wuzzy
-$text-color:$roboto, $raisin-black;
-$title-text:$playfair-display, $eerie-black;
+$highlight-color: $fuzzy-wuzzy;
+$text-color: $raisin-black;
+$text-main: $roboto $text-color;
+$text-title: $playfair-display $eerie-black;
+
+// font size
+//Tamaño en rems
+$xx-large:5rem;
+$x-large:3rem;
+$large:2rem;
+$medium:1rem;
 
 
 

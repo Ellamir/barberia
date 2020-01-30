@@ -9875,9 +9875,38 @@ h3 {
     border-color: #dee2e6;
   }
 }
+/*
+/// Container's maximum width
+/// @type Length
+$max-width: 1180px !default;
+
+
+
+
+
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$breakpoints: (
+  'small': 320px,
+  'medium': 768px,
+  'large': 1024px,
+) !default;
+
+
+
+
+
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+///   $base-url: 'http://cdn.example.com/assets/';
+$base-url: '/assets/' !default;
+*/
 /**
  * Set up a decent box model on the root element
- */
+
 html {
   box-sizing: border-box;
 }
@@ -9887,7 +9916,7 @@ html {
  * Since `*` has a specificity of 0, it does not override the `html` value
  * making all elements inheriting from the root box-sizing value
  * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
- */
+
 *,
 *::before,
 *::after {
@@ -9898,28 +9927,25 @@ html {
  * Basic styles for links
  */
 a {
-  color: #e50050;
+  color: #E56353;
   text-decoration: none;
 }
 a:hover, a:active, a:focus {
-  color: #222222;
+  color: #222323;
   text-decoration: underline;
 }
 
-/**
- * Basic typography style for copy text
- */
 body {
-  color: #222222;
-  font: normal 125%/1.4 "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  color: #222323;
+  font: "Roboto", "sans-serif" #222323;
 }
 
 /**
  * Clear inner floats
- */
+
 .clearfix::after {
   clear: both;
-  content: "";
+  content: '';
   display: table;
 }
 
@@ -9928,31 +9954,23 @@ body {
  * 1. Make the container full-width with a maximum width
  * 2. Center it in the viewport
  * 3. Leave some space on the edges, especially valuable on small screens
- */
-.container {
-  max-width: 1180px;
-  /* 1 */
-  margin-left: auto;
-  /* 2 */
-  margin-right: auto;
-  /* 2 */
-  padding-left: 20px;
-  /* 3 */
-  padding-right: 20px;
-  /* 3 */
-  width: 100%;
-  /* 1 */
-}
 
+.container {
+  max-width: $max-width; /* 1 
+  margin-left: auto; /* 2 
+  margin-right: auto; /* 2 
+  padding-left: 20px; /* 3 
+  padding-right: 20px; /* 3 
+  width: 100%; /* 1 
+ } */
 /**
  * Hide text while making it readable for screen readers
  * 1. Needed in WebKit-based browsers because of an implementation bug;
  *    See: https://code.google.com/p/chromium/issues/detail?id=457146
- */
+
 .hide-text {
   overflow: hidden;
-  padding: 0;
-  /* 1 */
+  padding: 0; /* 1 
   text-indent: 101%;
   white-space: nowrap;
 }
@@ -9961,7 +9979,7 @@ body {
  * Hide element while making it readable for screen readers
  * Shamelessly borrowed from HTML5Boilerplate:
  * https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css#L119-L133
- */
+
 .visually-hidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -9971,6 +9989,147 @@ body {
   padding: 0;
   position: absolute;
   width: 1px;
+}
+*/
+.footer {
+  padding: 50px 0px;
+  background-color: #121619;
+  text-align: center;
+}
+.footer img {
+  width: 120px;
+}
+
+.profile {
+  border-top: 1px solid #6C6E70;
+  border-bottom: 1px solid #6C6E70;
+  text-align: center;
+  padding: 50px;
+  margin-top: 50px;
+}
+.profile ul {
+  list-style: none;
+  padding: 0px;
+}
+.profile ul li {
+  display: inline-block;
+  white-space: normal;
+  text-align: left;
+  padding: 10px;
+  vertical-align: middle;
+}
+.profile__name {
+  font-family: "Playfair Display", "serif";
+  font-size: 2rem;
+  font-weight: 900 italic;
+  font-style: italic;
+}
+.profile__text {
+  width: 50%;
+}
+.profile__mail {
+  font-size: 1rem;
+  font-family: "Roboto", "sans-serif";
+  color: #E56353;
+  font-weight: 300;
+}
+
+.main-content {
+  padding: 0% 10%;
+}
+.main-content__h2 {
+  font-family: "Playfair Display", "serif";
+  font-weight: 300;
+  font-size: 1rem;
+  margin: -30px 0px 30px 0px;
+}
+.main-content__p {
+  line-height: 2;
+}
+
+.hero-section {
+  padding: 0px;
+  text-align: center;
+}
+.hero-section__bg {
+  background-image: url(../img/post-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 737px;
+  margin: 0 auto;
+  margin-bottom: 90px;
+  padding-top: 100px;
+}
+.hero-section__h1 {
+  color: #ffffff;
+  font-family: "Playfair Display", "serif";
+  font-weight: 900;
+  font-style: italic;
+  font-size: 3rem;
+  margin-top: 20vh;
+}
+.hero-section__flecha-abajo {
+  width: 40px;
+  margin-top: 15%;
+}
+
+.header__nav-container {
+  background-color: #121619;
+}
+.header__logo {
+  width: 100px;
+}
+.header__button {
+  background-color: #222323;
+}
+.header__a {
+  color: #ffffff;
+}
+.header__a:hover {
+  color: #E56353;
+}
+
+.pagination {
+  background-color: #dfdfdf;
+  padding: 20px 0px;
+  color: #222323;
+}
+.pagination nav {
+  margin: 0 auto;
+}
+.pagination ul {
+  margin: 0px;
+}
+.pagination .page-item:first-child .page-link {
+  border-radius: 20px 0px 0px 20px;
+}
+.pagination .page-item:last-child .page-link {
+  border-radius: 0px 20px 20px 0px;
+}
+.pagination .page-item.active .page-link {
+  background-color: #222323;
+  color: white;
+  border: 0px;
+}
+.pagination .page-link {
+  color: #222323;
+}
+
+.button {
+  margin-top: 20px;
+}
+.button__share {
+  padding: 2% 3%;
+  background-color: #6C6E70;
+  border-radius: 40px;
+  color: white;
+  border: 0px;
+  font-size: 1rem;
+  display: inline-block;
+}
+.button__share:hover {
+  background-color: #E56353;
 }
 
 /*# sourceMappingURL=style.css.map */

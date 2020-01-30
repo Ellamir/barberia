@@ -33,3 +33,9 @@ a {
     text-decoration: underline;
   }
 }
+
+// estilo base
+body {
+  color: $text-color;
+  font: $text-main;
+}
