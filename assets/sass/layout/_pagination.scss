@@ -1,0 +1,29 @@
+.pagination{
+    background-color: rgb(223, 223, 223);
+    padding: 20px 0px;
+    color:$raisin-black;
+    nav{
+        margin:0 auto;
+    }
+    ul{
+        margin: 0px;
+    }
+
+    .page-item:first-child .page-link{
+        border-radius: 20px 0px 0px 20px;
+    }
+
+    .page-item:last-child .page-link{
+        border-radius: 0px 20px 20px 0px;
+    }
+
+    .page-item.active .page-link{
+        background-color: $raisin-black;
+        color:white;
+        border:0px;
+    }
+
+    .page-link{
+        color:$raisin-black;
+    }
+}

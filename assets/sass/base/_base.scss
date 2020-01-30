@@ -4,7 +4,7 @@
 
 /**
  * Set up a decent box model on the root element
- */
+ 
 html {
   box-sizing: border-box;
 }
@@ -14,7 +14,7 @@ html {
  * Since `*` has a specificity of 0, it does not override the `html` value
  * making all elements inheriting from the root box-sizing value
  * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
- */
+ 
 *,
 *::before,
 *::after {
@@ -25,7 +25,7 @@ html {
  * Basic styles for links
  */
 a {
-  color: $brand-color;
+  color: $highlight-color;
   text-decoration: none;
 
   @include on-event {

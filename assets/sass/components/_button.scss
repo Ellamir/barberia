@@ -1,3 +1,20 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+.button{
+    margin-top: 20px;
+    &_share{
+        padding: 2% 3%;
+        background-color: $nickel;
+        border-radius: 40px;
+        color: white;
+        border:0px;
+        font-size: $medium;
+        display: inline-block;
+
+        &:hover{
+            background-color: $fuzzy-wuzzy;
+        }
+    }
+
+}

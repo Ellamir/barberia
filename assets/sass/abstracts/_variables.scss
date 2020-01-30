@@ -15,33 +15,32 @@ $text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvet
 $code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
 
 
+// Colores
+
+$white:#ffffff;
+$platinum:#E6E7E7;
+$light-gray:#A0A0A0;
+$fuzzy-wuzzy:#E56353;
+$ruddy-pink:#D76C69;
+$spanish-pink:#ECBCBA;
+$eerie-black:#121619;
+$raisin-black:#222323;
+$nickel:#6C6E70;
+
+// Textos
+
+$roboto: 'Roboto', sans-serif;
+$playfair-display: 'Playfair Display', serif;
+$light:300;
+$regular:400;
+$black-italic:900 italic;
+$highlight-color:$fuzzy-wuzzy
+$text-color:$roboto, $raisin-black;
+$title-text:$playfair-display, $eerie-black;
 
 
 
-/// Copy text color
-/// @type Color
-$text-color: rgb(34, 34, 34) !default;
-
-/// Main brand color
-/// @type Color
-$brand-color: rgb(229, 0, 80) !default;
-
-/// Light grey
-/// @type Color
-$light-grey: rgb(237, 237, 237) !default;
-
-/// Medium grey
-/// @type Color
-$mid-grey: rgb(153, 153, 153) !default;
-
-/// Dark grey
-/// @type Color
-$dark-grey: rgb(68, 68, 68) !default;
-
-
-
-
-
+/*
 /// Container's maximum width
 /// @type Length
 $max-width: 1180px !default;
@@ -69,3 +68,4 @@ $breakpoints: (
 /// @example scss - When using a CDN
 ///   $base-url: 'http://cdn.example.com/assets/';
 $base-url: '/assets/' !default;
+*/

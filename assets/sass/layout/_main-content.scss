@@ -1,0 +1,14 @@
+.main-content{
+    padding:0% 10%;
+
+    &__h2{
+        font-family: $playfair-display;
+        font-weight: $light;
+        font-size: $medium;
+        margin: -30px 0px 30px 0px;
+    }
+
+    &__p{
+        line-height: 2;
+    }
+}
