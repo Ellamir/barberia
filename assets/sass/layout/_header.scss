@@ -4,7 +4,6 @@
 .header{
     &__nav-container{
         background-color: $eerie-black;
-
     }
 
     &__logo{
@@ -19,13 +18,6 @@
         color:$white;
         &:hover{
             color:$fuzzy-wuzzy;
-        }
-       
-        &span.sr-only{
-            color:$fuzzy-wuzzy;
-        }
-        &ul.active{
-            color:$fuzzy-wuzzy !important;
         }
     }
 }
