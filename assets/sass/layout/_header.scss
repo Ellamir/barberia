@@ -6,6 +6,8 @@
         background-color: $eerie-black;
     }
 
+    
+
     &__logo{
         width: 100px;
     }
@@ -21,4 +23,26 @@
         }
     }
 }
+
+.navbar-toggler-icon {
+    background-image: escape-svg($navbar-dark-toggler-icon-bg);
+  }
 // test 
+  .navbar-nav {
+    .nav-link {
+      color: $white;
+
+      @include hover-focus() {
+        color: $fuzzy-wuzzy;
+      }
+
+      
+    }
+
+    .show > .nav-link,
+    .active > .nav-link,
+    .nav-link.show,
+    .nav-link.active {
+      color: $fuzzy-wuzzy;
+    }
+  }
