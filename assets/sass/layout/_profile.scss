@@ -34,6 +34,11 @@
         font-family: $roboto;
         color: $fuzzy-wuzzy;
         font-weight: $light;
+
+        &:hover{
+        
+            color: $raisin-black;
+        }
     }
 
     

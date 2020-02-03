@@ -13,7 +13,15 @@
         display: inline-block;
 
         &:hover{
-            background-color: $fuzzy-wuzzy;
+        
+            background-color: $light-gray;
+        }
+
+        &:focus{
+            &:hover{
+                border:2px;
+                border-color: $light-gray;
+            }
         }
     }
 
