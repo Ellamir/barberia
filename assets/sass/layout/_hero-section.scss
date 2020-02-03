@@ -6,7 +6,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        height: 737px;
+        height: 95vh;
         margin:0 auto;
         margin-bottom: 90px;
         padding-top: 100px;
@@ -19,12 +19,14 @@
         font-weight: 900;
         font-style:italic;
         font-size: $x-large;
-        margin-top: 20vh;
+        margin-top: 15vh;
     }
 
     &__flecha-abajo{
         width: 40px;
-        margin-top: 15%;  
+        margin-top: 10%;  
+        color:#ffffff;
+        text-decoration: none;
     }
 }
 

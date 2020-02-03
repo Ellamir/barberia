@@ -10075,6 +10075,8 @@ body {
 .hero-section__flecha-abajo {
   width: 40px;
   margin-top: 15%;
+  color: #ffffff;
+  text-decoration: no;
 }
 
 .header__nav-container {
